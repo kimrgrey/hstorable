@@ -45,7 +45,7 @@ class Api::OneApiWrapper < Api::Wrapper
   hstore_simple :properties, name: 'state', readonly: true, default: 'created'
 end
 
-class Api::AnotherApiWrapper < Api::BaseWrapper
+class Api::AnotherApiWrapper < Api::Wrapper
   hstore_simple :properties, name: 'user_name'
   hstore_simple :properties, name: 'secret'
 end
@@ -54,9 +54,9 @@ end
 Different types of models with different set of fields will be stored in one table. And you can use it as ordinary model's properties.
 
 ```ruby
-api = Api::OneApiWrapper.new(consumer_key: '743b57c3120b49b42588011066411d98', cosumer_secret: '743b57c3120b49b42588011066411d98')
-api.cosumer_key # => '743b57c3120b49b42588011066411d98'
-api.cosumer_secret # => '743b57c3120b49b42588011066411d98'
+api = Api::OneApiWrapper.new(consumer_key: '743b57c3120b49b42588011066411d98', consumer_secret: '743b57c3120b49b42588011066411d98')
+api.consumer_key # => '743b57c3120b49b42588011066411d98'
+api.consumer_secret # => '743b57c3120b49b42588011066411d98'
 api.save
 api.update cosumer_key: '2afc9269f7ceb78533d6a2e2d72a14f9'
 ```
