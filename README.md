@@ -7,7 +7,7 @@ This gem simplifies working wih fields stored using Hstore
 To use hstorable you should add this line to your Gemfile:
 
 ```
-gem 'hstorable', '~> 0.0.2'
+gem 'hstorable', '~> 0.0.5'
 ```
 
 Note, this gem depends on hsore extension of PostgreSQL. So, you should create this extension in your db:
@@ -55,10 +55,10 @@ Different types of models with different set of fields will be stored in one tab
 
 ```ruby
 api = Api::OneApiWrapper.new(consumer_key: '743b57c3120b49b42588011066411d98', cosumer_secret: '743b57c3120b49b42588011066411d98')
-api.cosumer_key # => 743b57c3120b49b42588011066411d98
-api.cosumer_secret # => 743b57c3120b49b42588011066411d98
+api.cosumer_key # => '743b57c3120b49b42588011066411d98'
+api.cosumer_secret # => '743b57c3120b49b42588011066411d98'
 api.save
-api.update cosumer_key: 2afc9269f7ceb78533d6a2e2d72a14f9
+api.update cosumer_key: '2afc9269f7ceb78533d6a2e2d72a14f9'
 ```
 
 Cool, isn't?
