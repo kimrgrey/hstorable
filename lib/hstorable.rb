@@ -1,4 +1,6 @@
-require 'hstorable/model'
+require 'hstorable/base'
+require 'hstorable/simple_fields'
+require 'hstorable/model_fields'
 
 module Hstorable
   def self.included(base)
