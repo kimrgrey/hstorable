@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["sergey.a.tsvetkov@gmail.com"]
   spec.summary       = %q{This gem simplifies working wih fields stored using Hstore}
   spec.description   = %q{This gem simplifies working wih fields stored using Hstore}
-  spec.homepage      = "http://hstorable.kimrgrey.org/"
+  spec.homepage      = "https://github.com/kimrgrey/hstorable"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split("\n")
